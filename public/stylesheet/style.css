@@ -1,0 +1,192 @@
+html, body {
+    font-family: Arial, serif;
+    height: 100%;
+    margin: 0;
+}
+
+.sticker {
+    min-height: 100%;
+    margin-bottom: -4rem;
+}
+
+.pusher {
+    padding-bottom: 4rem;
+}
+
+body {
+    background: #3d3d3d;
+}
+
+header {
+    padding-top: 1rem;
+}
+
+footer {
+    padding-bottom: 1rem;
+}
+
+.center {
+    text-align: center;
+    margin: 60px;
+    color: #fff;
+}
+
+.center p {
+    font-size: 20px;
+}
+
+.center-obj {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper {
+    background: #85858594;
+    border-radius: 10px;
+    max-width: 970px;
+    overflow: hidden;
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: inherit;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper ul {
+    display: flex;
+    vertical-align: middle;
+}
+
+.wrapper li {
+    display: block;
+    padding-left: 10px;
+}
+
+.wrapper p {
+    float: right;
+    color: #fff;
+    padding-top: 4px;
+    font-size: 12px;
+}
+
+.form {
+    margin: 0 auto;
+    width: 50%;
+    padding: 20px;
+}
+
+p a {
+    color: black;
+    text-shadow: 0 0 12px white;
+    text-decoration: none;
+}
+
+p a:hover {
+    color: white;
+}
+
+a.logo {
+    background: url(../images/home-icon-black.png) no-repeat center center / cover;
+    background-size: 50%;
+    color: transparent;
+    width: 72px;
+    margin: 7px -50px 7px 0;
+    float: left;
+}
+
+a.logo:hover {
+    background: url(../images/home-icon-white.png) no-repeat center center / cover;
+    background-size: 50%;
+}
+
+a.buttons {
+    padding: 3px 4px;
+}
+
+.buttons {
+    margin-top: 10px;
+    height: 24px;
+    width: 70px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.buttons:hover {
+    height: 24px;
+    width: 70px;
+    text-align: center;
+    background: #fff;
+    color: #000;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form {
+    font-size: 18px;
+    color: #fff;
+    margin: 30px;
+}
+
+.search-form {
+    text-align: center;
+}
+
+.search-text {
+    border-radius: 5px;
+    background: black;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+tr {
+    text-align: center;
+}
+
+th {
+    margin: 10px;
+    padding: 10px;
+}
+
+table, th, td {
+    font-size: 18px;
+    color: white;
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+table {
+    border: 0;
+    margin: 30px auto auto;
+}
+
+.deleteCheck {
+    height: 1.2em;
+    width: 1.2em;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.deleteCheck:checked {
+    content: url("../images/check-box.png");
+    height: 1.2em;
+    width: 1.2em;
+    vertical-align: middle;
+}
+
+.updateRadio {
+    border: 1px solid #fff;
+    border-radius: 100%;
+    padding: 0.5em;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.updateRadio:checked {
+    background: white;
+}

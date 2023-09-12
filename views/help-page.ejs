@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheet/style.css"/>
+</head>
+<body>
+<div class="sticker">
+    <%- include('partials/header'); -%>
+    <div class="center">
+        <h1>Help Page</h1>
+        <p>Click on the <a href="/">Home Icon</a> to return to Home page</p>
+        <p>Click on the <a href="/new">Enter Phone Usage</a> button to insert New information</p>
+        <p>Click on the <a href="/check">Check Phone Usage</a> button to Check entered information</p>
+        <p>Click on the <a href="/update">Update Phone Usage</a> button to Update entered information</p>
+        <p>Click on the <a href="/delete">Delete Phone Usage</a> button to Delete entered information</p>
+        <p>Click on <a href="/about">About Us</a> button to read more About our website</p>
+    </div>
+    <div class="pusher"></div>
+</div>
+<%- include('partials/footer'); -%>
+</body>
+</html>

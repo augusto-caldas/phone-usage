@@ -1,0 +1,66 @@
+<% if (tableType === "check") { %>
+<form method="post" action="/search-check" class="search-form">
+    <input type="text" name="search-name" class="search-text" placeholder="Search by name">
+    <input type="submit" class="buttons">
+</form>
+<% } %>
+<% if (tableType === "delete") { %>
+<form method="post" action="/search-delete" class="search-form">
+    <input type="text" name="search-name" class="search-text" placeholder="Search by name">
+    <input type="submit" class="buttons">
+</form>
+<% } %>
+<% if (tableType === "update") { %>
+<form method="post" action="/search-update" class="search-form">
+    <input type="text" name="search-name" class="search-text" placeholder="Search by name">
+    <input type="submit" class="buttons">
+</form>
+<% } %>
+<% if (tableType === "delete") { %>
+    <form method="post" action="/usage/delete">
+<% } %>
+<% if (tableType === "update") { %>
+    <form method="post" action="/update-form">
+<% } %>
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+        <th>Educational</th>
+        <th>Shopping</th>
+        <th>Browsing</th>
+        <th>Social</th>
+        <% if (tableType === "delete") { %>
+            <th>Delete</th>
+        <% } %>
+        <% if (tableType === "update") { %>
+            <th>Update</th>
+        <% } %>
+    </tr>
+    </thead>
+    <tbody>
+    <% for(var i = 0; i < usageList.length; i++) { %>
+        <tr>
+            <td><%= usageList[i].name %></td>
+            <td><%= usageList[i].createdAt.toLocaleString(locale, localeDate) %></td>
+            <td><%= usageList[i].updatedAt.toLocaleString(locale, localeDate) %></td>
+            <td><%= usageList[i].educationUsage %></td>
+            <td><%= usageList[i].shoppingUsage %></td>
+            <td><%= usageList[i].browsingUsage %></td>
+            <td><%= usageList[i].socialUsage %></td>
+            <% if (tableType === "delete") { %>
+            <td><label><input type="checkbox" name="delete" class="deleteCheck" value="<%= usageList[i]._id %>"></label></td>
+            <% } %>
+            <% if (tableType === "update") { %>
+            <td><label><input type="radio" name="update" class="updateRadio" value="<%= usageList[i]._id %>"></label></td>
+            <% } %>
+        </tr>
+    <% } %>
+    </tbody>
+</table>
+<% if (tableType === "delete" || tableType === "update") { %>
+<input type="submit" class="center-obj buttons">
+</form>
+<% } %>

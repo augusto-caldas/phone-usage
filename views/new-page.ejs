@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheet/style.css"/>
+</head>
+<body>
+<div class="sticker">
+    <%- include('partials/header'); -%>
+    <div class="form">
+        <form action="/usage/new" method="post">
+            <p>
+                <label>Name*:
+                    <input type="text" name="name" required>
+                </label>
+            </p>
+            <h2 class="center">Please enter following information in hours</h2>
+            <p>
+                <label>Phone usage for education:
+                    <input type="number" name="educationUsage" value="0" min="0">
+                </label>
+            </p>
+            <p>
+                <label>Phone usage for shopping:
+                    <input type="number" name="shoppingUsage" value="0" min="0">
+                </label>
+            </p>
+            <p>
+                <label>Phone usage for searching and browsing:
+                    <input type="number" name="browsingUsage" value="0" min="0">
+                </label>
+            </p>
+            <p>
+                <label>Phone usage for social media:
+                    <input type="number" name="socialUsage" value="0" min="0">
+                </label>
+            </p>
+            <input type="submit" class="center-obj buttons">
+        </form>
+    </div>
+    <div class="pusher"></div>
+</div>
+<%- include('partials/footer'); -%>
+</body>
+</html>
